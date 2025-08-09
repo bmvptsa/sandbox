@@ -6,9 +6,9 @@
 // Configuration
 const SITE_CONFIG = {
     // External service URLs - Update these with your actual links
-    givebacksCalendar: 'https://your-givebacks-calendar.com',
-    signUpGenius: 'https://your-signupgenius.com',
-    membershipPortal: 'https://your-membership-link.com',
+    givebacksCalendar: 'https://bmv.givebacks.com/portal',
+    signUpGenius: 'https://www.signupgenius.com/index.cfm?go=c.SignUpSearch&eid=bmvptsa',
+    membershipPortal: 'https://bmv.givebacks.com/membership',
     
     // Canva integration settings
     canvaTeamId: 'your-canva-team-id',
@@ -222,39 +222,27 @@ class EventManager {
                 date: '2025-08-10',
                 time: '10:00 AM - 12:00 PM',
                 location: 'TY Park Playground',
-                description: 'POSTPONED UNTIL SUNDAY, AUGUST 10
-🎉 BMV Family Playdate – You’re Invited! 🎉
-
-Whether you’re new to Beachside or a returning family, come mix, mingle, and make new friends at our annual BMV Family Playdate!
-
-It’s the perfect chance for:
-🌟 New families to meet current ones and ask questions
-👧🧒 New students to meet future classmates
-😊 Everyone to ease those first-day jitters
-
-We’ll see you at the playground!
-
-Please note: TY Park charges a $3 per vehicle entrance fee on weekends.',
+                description: 'POSTPONED UNTIL SUNDAY, AUGUST 10 🎉 BMV Family Playdate – You\'re Invited! 🎉 Whether you\'re new to Beachside or a returning family, come mix, mingle, and make new friends at our annual BMV Family Playdate! It\'s the perfect chance for new families to meet current ones and ask questions, new students to meet future classmates, and everyone to ease those first-day jitters. We\'ll see you at the playground! Please note: TY Park charges a $3 per vehicle entrance fee on weekends.',
                 givebacksUrl: 'https://bmv.givebacks.com/events/9bd8e87d-e1d0-4a4c-ae19-2fae098b48c1/view',
                 canvaFlyerId: 'canva-flyer-123'
             },
             {
                 id: 2,
                 title: 'PTSA General Meeting',
-                date: '2025-03-22',
+                date: '2025-08-22',
                 time: '7:00 PM - 8:30 PM',
                 location: 'Media Center',
                 description: 'Monthly meeting to discuss upcoming events, budget updates, and new initiatives. All parents welcome!',
-                givebacksUrl: 'https://givebacks.com/event2'
+                givebacksUrl: 'https://bmv.givebacks.com/events/ptsa-meeting'
             },
             {
                 id: 3,
-                title: 'Book Fair Week',
-                date: '2025-04-05',
-                time: '8:00 AM - 4:00 PM',
-                location: 'Library',
-                description: 'Scholastic Book Fair returns! Browse books for all ages and support our literacy programs.',
-                givebacksUrl: 'https://givebacks.com/event3'
+                title: 'Back to School Night',
+                date: '2025-08-28',
+                time: '6:00 PM - 8:00 PM',
+                location: 'School Classrooms',
+                description: 'Meet your child\'s teachers, learn about classroom expectations, and get important information for the school year.',
+                givebacksUrl: 'https://bmv.givebacks.com/events/back-to-school-night'
             }
         ];
         this.renderEvents();
