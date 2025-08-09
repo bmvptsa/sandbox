@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn about Beachside Montessori Village PTSA - our mission, leadership team, and how we support our school community.">
+    <meta name="keywords" content="BMV PTSA, about us, leadership, mission, Beachside Montessori Village">
+    <title>About Us - Beachside Montessori Village PTSA</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="../css/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Page-specific styles -->
+    <style>
+        .page-hero {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            padding: 4rem 0 3rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 100%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shimmer 3s infinite;
+        }
+        
+        .page-hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .page-hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .page-hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .content-sections {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 20px;
+            display: grid;
+            gap: 3rem;
+        }
+        
+        .content-section {
+            background: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .content-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #fbbf24, #2563eb);
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            color: #2563eb;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section-title i {
+            font-size: 2.2rem;
+            color: #fbbf24;
+        }
+        
+        .mission-vision-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .mission-card, .vision-card {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .mission-card {
+            border-color: #2563eb;
+        }
+        
+        .vision-card {
+            border-color: #fbbf24;
+        }
+        
+        .mission-card:hover, .vision-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+        
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+        }
+        
+        .mission-card .card-icon {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+        }
+        
+        .vision-card .card-icon {
+            background: linear-gradient(135deg, #fbbf24, #f59e0b);
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .value-item {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .value-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: linear-gradient(90deg, #2563eb, #fbbf24);
+        }
+        
+        .value-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .value-icon {
+            font-size: 2.5rem;
+            color: #2563eb;
+            margin-bottom: 1rem;
+        }
+        
+        .value-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .officers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .officer-card {
+            background: linear-gradient(135deg, #f8fafc, #ffffff);
+            border: 2px solid #e2e8f0;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .officer-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, #2563eb, #fbbf24);
+        }
+        
+        .officer-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(37, 99, 235, 0.2);
+            border-color: #2563eb;
+        }
+        
+        .officer-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+        
+        .officer-position {
+            font-size: 1.1rem;
+            color: #2563eb;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+        }
+        
+        .officer-email {
+            color: #64748b;
+            font-size: 0.9rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .officer-email:hover {
+            color: #2563eb;
+        }
+        
+        .what-we-do-list {
+            display: grid;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .activity-item {
+            background: linear-gradient(135deg, #f8fafc, #f1f5f9);
+            border-left: 4px solid #2563eb;
+            padding: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .activity-item:hover {
+            transform: translateX(5px);
+            border-left-width: 6px;
+        }
+        
+        .activity-title {
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .activity-title i {
+            color: #2563eb;
+        }
+        
+        .get-involved-cta {
+            background: linear-gradient(135deg, #2563eb, #3b82f6);
+            color: white;
+            padding: 3rem;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        
+        .cta-title {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .cta-btn {
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .cta-btn.primary {
+            background: #fbbf24;
+            color: #92400e;
+        }
+        
+        .cta-btn.secondary {
+            background: transparent;
+            color: white;
+            border-color: white;
+        }
+        
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+        }
+        
+        .cta-btn.primary:hover {
+            background: #f59e0b;
+        }
+        
+        .cta-btn.secondary:hover {
+            background: white;
+            color: #2563eb;
+        }
+        
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .page-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .page-hero p {
+                font-size: 1.1rem;
+            }
+            
+            .content-sections {
+                padding: 2rem 15px;
+            }
+            
+            .content-section {
+                padding: 2rem;
+            }
+            
+            .section-title {
+                font-size: 1.7rem;
+            }
+            
+            .mission-vision-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .officers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Beachside Montessori Village PTSA</div>
+            <a href="https://bmv.givebacks.com/shop" class="join-btn">Join PTSA Today!</a>
+        </div>
+    </header>
+
+    <!-- Dynamic Navigation -->
+    <nav class="navigation" id="dynamicNavigation">
+        <!-- Navigation will be dynamically loaded here -->
+    </nav>
+
+    <!-- Site Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <div class="disclaimer-content">
+            <strong>Notice:</strong> This website is volunteer-created and not an official site of Beachside Montessori Village.
+        </div>
+    </div>
+
+    <!-- Page Hero -->
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>About BMV PTSA</h1>
+            <p>Building strong partnerships between families, educators, and community to support every child's success</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="content-sections" id="main-content">
+        <!-- Mission and Vision Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-bullseye"></i>
+                Our Mission & Vision
+            </h2>
+            <p>As part of the National and Florida PTA network, we are committed to making every child's potential a reality by engaging and empowering families and communities to advocate for all children.</p>
+            
+            <div class="mission-vision-grid">
+                <div class="mission-card">
+                    <div class="card-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="card-title">Our Mission</h3>
+                    <p>To make every child's potential a reality by engaging and empowering families and communities to advocate for all children at Beachside Montessori Village.</p>
+                </div>
+                
+                <div class="vision-card">
+                    <div class="card-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="card-title">Our Vision</h3>
+                    <p>To be the premier advocacy association for children and families, creating a thriving educational environment where every student succeeds.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PTSA Values Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-star"></i>
+                Our Core Values
+            </h2>
+            <p>As part of the National and Florida PTA network, we uphold core values that guide our work and decision-making:</p>
+            
+            <div class="values-grid">
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h4 class="value-title">Collaboration</h4>
+                    <p>Working in partnership with diverse stakeholders to broaden our impact</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <h4 class="value-title">Commitment</h4>
+                    <p>Dedicated to children's educational success, health, and well-being</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="value-title">Diversity</h4>
+                    <p>Acknowledging the potential of everyone without regard to background</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h4 class="value-title">Respect</h4>
+                    <p>Valuing individual contributions as we work toward our goals</p>
+                </div>
+                
+                <div class="value-item">
+                    <div class="value-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h4 class="value-title">Accountability</h4>
+                    <p>Shared responsibility for achieving our association's initiatives</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Leadership Team Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-users-cog"></i>
+                Leadership Team 2025-2026
+            </h2>
+            <p>Meet our dedicated volunteer leadership team working to support our school community:</p>
+            
+            <div class="officers-grid">
+                <div class="officer-card">
+                    <h4 class="officer-name">President</h4>
+                    <div class="officer-position">Chief Executive Officer</div>
+                    <a href="mailto:president@bmvptsa.org" class="officer-email">president@bmvptsa.org</a>
+                </div>
+                
+                <div class="officer-card">
+                    <h4 class="officer-name">Vice President</h4>
+                    <div class="officer-position">Programs & Operations</div>
+                    <a href="mailto:vp@bmvptsa.org" class="officer-email">vp@bmvptsa.org</a>
+                </div>
+                
+                <div class="officer-card">
+                    <h4 class="officer-name">Secretary</h4>
+                    <div class="officer-position">Records & Communications</div>
+                    <a href="mailto:secretary@bmvptsa.org" class="officer-email">secretary@bmvptsa.org</a>
+                </div>
+                
+                <div class="officer-card">
+                    <h4 class="officer-name">Treasurer</h4>
+                    <div class="officer-position">Financial Management</div>
+                    <a href="mailto:treasurer@bmvptsa.org" class="officer-email">treasurer@bmvptsa.org</a>
+                </div>
+                
+                <div class="officer-card">
+                    <h4 class="officer-name">Membership Chair</h4>
+                    <div class="officer-position">Community Engagement</div>
+                    <a href="mailto:membership@bmvptsa.org" class="officer-email">membership@bmvptsa.org</a>
+                </div>
+                
+                <div class="officer-card">
+                    <h4 class="officer-name">Communications Chair</h4>
+                    <div class="officer-position">Marketing & Outreach</div>
+                    <a href="mailto:communications@bmvptsa.org" class="officer-email">communications@bmvptsa.org</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- What We Do Section -->
+        <section class="content-section">
+            <h2 class="section-title">
+                <i class="fas fa-tasks"></i>
+                What We Do
+            </h2>
+            <p>The BMV PTSA serves our school community through various initiatives and programs that directly benefit students, families, and teachers:</p>
+            
+            <div class="what-we-do-list">
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-megaphone"></i>
+                        Advocacy
+                    </div>
+                    <p>Supporting policies that benefit students and families at local, state, and national levels through the PTA network</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-graduation-cap"></i>
+                        Educational Programs
+                    </div>
+                    <p>Hosting workshops, speaker events, and educational opportunities for families and students</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-people-arrows"></i>
+                        Community Building
+                    </div>
+                    <p>Creating connections between families, teachers, and school administration through events and activities</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-hands-helping"></i>
+                        Student Support
+                    </div>
+                    <p>Funding programs, resources, and supplies that directly benefit student learning and well-being</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-volunteer"></i>
+                        Volunteer Coordination
+                    </div>
+                    <p>Organizing volunteer opportunities for school events, classroom support, and special activities</p>
+                </div>
+                
+                <div class="activity-item">
+                    <div class="activity-title">
+                        <i class="fas fa-dollar-sign"></i>
+                        Ethical Fundraising
+                    </div>
+                    <p>Supporting school programs through responsible fundraising activities that follow PTA guidelines</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Get Involved CTA -->
+        <section class="get-involved-cta">
+            <h3 class="cta-title">Ready to Get Involved?</h3>
+            <p class="cta-text">Join us in making a difference in our children's education and school community. Every family's participation makes our school stronger!</p>
+            
+            <div class="cta-buttons">
+                <a href="https://bmv.givebacks.com/membership" class="cta-btn primary" target="_blank" rel="noopener">Join PTSA</a>
+                <a href="../pages/volunteer.html" class="cta-btn secondary">Volunteer</a>
+                <a href="../pages/committees.html" class="cta-btn secondary">Join a Committee</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>📧 info@bmvptsa.org</p>
+                <p>📍 2230 Lincoln St, Hollywood, FL 33020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="about.html">About PTSA</a>
+                <a href="calendar.html">Events</a>
+                <a href="volunteer.html">Volunteer</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/groups/bmvptsa" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://instagram.com/bmv_ptsa" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Beachside Montessori Village PTSA. All rights reserved.</p>
+            <p class="disclaimer">This website is volunteer-created and not an official site of Beachside Montessori Village.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/navigation.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+    
+    <!-- Initialize page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set active navigation
+            if (window.BMVNavigation) {
+                window.BMVNavigation.setActive('/pages/about.html');
+            }
+            
+            console.log('About page loaded successfully');
+        });
+    </script>
+</body>
+</html>
