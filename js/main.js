@@ -228,21 +228,21 @@ class EventManager {
             },
             {
                 id: 2,
-                title: 'PTSA General Meeting',
-                date: '2025-08-22',
-                time: '7:00 PM - 8:30 PM',
-                location: 'Media Center',
-                description: 'Monthly meeting to discuss upcoming events, budget updates, and new initiatives. All parents welcome!',
-                givebacksUrl: 'https://bmv.givebacks.com/events/ptsa-meeting'
+                title: 'First Day of School!',
+                date: '2025-08-11',
+                time: '9:15 AM - 3:45 PM',
+                location: 'Beachside Montessori Village',
+                description: 'Have a Great School Year!',
+                givebacksUrl: 'https://bmv.givebacks.com/events/b7389667-1ce6-48ec-8f1f-bb2eaabbd8e6/view'
             },
             {
                 id: 3,
-                title: 'Back to School Night',
-                date: '2025-08-28',
-                time: '6:00 PM - 8:00 PM',
-                location: 'School Classrooms',
-                description: 'Meet your child\'s teachers, learn about classroom expectations, and get important information for the school year.',
-                givebacksUrl: 'https://bmv.givebacks.com/events/back-to-school-night'
+                title: 'PTSA General Meeting',
+                date: '2025-08-27',
+                time: '8:00 AM - 9:30 AM',
+                location: 'BMV Media Center',
+                description: 'Whether you’re a returning member or thinking about joining, come be a part of our first PTSA General Meeting of the year!',
+                givebacksUrl: 'https://bmv.givebacks.com/events/a3c48f7a-4f76-4e20-a485-c8fd66b04e83/view'
             }
         ];
         this.renderEvents();
