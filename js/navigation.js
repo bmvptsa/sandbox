@@ -56,7 +56,7 @@ const navigationConfig = {
         },
         {
             text: 'Store',
-            url: '/pages/store.html',
+            url: 'https://bmv.givebacks.com/shop',
             id: 'store'
         },
         {
