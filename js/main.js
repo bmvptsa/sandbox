@@ -218,12 +218,24 @@ class EventManager {
         this.events = [
             {
                 id: 1,
-                title: 'Spring Carnival',
-                date: '2025-03-15',
-                time: '10:00 AM - 3:00 PM',
-                location: 'School Playground',
-                description: 'Join us for our annual Spring Carnival featuring games, food trucks, and family fun activities. Volunteers needed!',
-                givebacksUrl: 'https://givebacks.com/event1',
+                title: 'BMV Family Playdate',
+                date: '2025-08-10',
+                time: '10:00 AM - 12:00 PM',
+                location: 'TY Park Playground',
+                description: 'POSTPONED UNTIL SUNDAY, AUGUST 10
+🎉 BMV Family Playdate – You’re Invited! 🎉
+
+Whether you’re new to Beachside or a returning family, come mix, mingle, and make new friends at our annual BMV Family Playdate!
+
+It’s the perfect chance for:
+🌟 New families to meet current ones and ask questions
+👧🧒 New students to meet future classmates
+😊 Everyone to ease those first-day jitters
+
+We’ll see you at the playground!
+
+Please note: TY Park charges a $3 per vehicle entrance fee on weekends.',
+                givebacksUrl: 'https://bmv.givebacks.com/events/9bd8e87d-e1d0-4a4c-ae19-2fae098b48c1/view',
                 canvaFlyerId: 'canva-flyer-123'
             },
             {
