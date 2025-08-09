@@ -1,6 +1,6 @@
 /**
  * Beachside Montessori Village PTSA - Main JavaScript
- * General functionality and interactions for the website
+ * General functionality and interactions for the website.
  */
 
 // Configuration
