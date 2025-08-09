@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beachside Montessori Village PTSA - Supporting our students, teachers, and community through parent involvement and volunteerism.">
+    <meta name="keywords" content="PTSA, Beachside Montessori Village, Hollywood Florida, parent involvement, school volunteers">
+    <title>Home - Beachside Montessori Village PTSA</title>
+    
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">Beachside Montessori Village PTSA</div>
+            <a href="#join" class="join-btn">Join PTSA Today</a>
+        </div>
+    </header>
+
+    <!-- Dynamic Navigation (will be populated by JavaScript) -->
+    <nav class="navigation" id="dynamicNavigation">
+        <!-- Navigation will be dynamically loaded here -->
+    </nav>
+
+    <!-- Site Disclaimer Banner -->
+    <div class="disclaimer-banner">
+        <div class="disclaimer-content">
+            <strong>Notice:</strong> This website is volunteer-created and not an official site of Beachside Montessori Village.
+        </div>
+    </div>
+
+    <!-- Hero Sponsor Section -->
+    <section class="sponsor-hero">
+        <div class="sponsor-hero-content">
+            <h2>Our Platinum Partners</h2>
+            <div class="platinum-carousel">
+                <div class="platinum-track">
+                    <!-- Placeholder sponsors - will be replaced with actual sponsors -->
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner A">
+                        <img src="assets/sponsors/platinum/sponsor-a.png" alt="Premium Partner A" loading="lazy">
+                        <span class="sponsor-name">Premium Partner A</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner B">
+                        <img src="assets/sponsors/platinum/sponsor-b.png" alt="Premium Partner B" loading="lazy">
+                        <span class="sponsor-name">Premium Partner B</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner C">
+                        <img src="assets/sponsors/platinum/sponsor-c.png" alt="Premium Partner C" loading="lazy">
+                        <span class="sponsor-name">Premium Partner C</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner D">
+                        <img src="assets/sponsors/platinum/sponsor-d.png" alt="Premium Partner D" loading="lazy">
+                        <span class="sponsor-name">Premium Partner D</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner E">
+                        <img src="assets/sponsors/platinum/sponsor-e.png" alt="Premium Partner E" loading="lazy">
+                        <span class="sponsor-name">Premium Partner E</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner F">
+                        <img src="assets/sponsors/platinum/sponsor-f.png" alt="Premium Partner F" loading="lazy">
+                        <span class="sponsor-name">Premium Partner F</span>
+                    </div>
+                    <!-- Duplicate for seamless scroll -->
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner A">
+                        <img src="assets/sponsors/platinum/sponsor-a.png" alt="Premium Partner A" loading="lazy">
+                        <span class="sponsor-name">Premium Partner A</span>
+                    </div>
+                    <div class="platinum-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Premium Partner B">
+                        <img src="assets/sponsors/platinum/sponsor-b.png" alt="Premium Partner B" loading="lazy">
+                        <span class="sponsor-name">Premium Partner B</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-grid">
+            <!-- Events Section -->
+            <section class="events-section">
+                <div class="section-header">
+                    <h2 class="section-title">Upcoming Events</h2>
+                    <a href="https://your-givebacks-calendar-link.com" class="view-all-btn" target="_blank" rel="noopener">View Full Calendar</a>
+                </div>
+                
+                <div class="event-cards" id="eventCards">
+                    <!-- Events will be dynamically loaded from Canva/Givebacks -->
+                    <div class="event-card" onclick="openEventLink('https://givebacks.com/event1')">
+                        <div class="event-date">MAR 15</div>
+                        <div class="event-title">Spring Carnival</div>
+                        <div class="event-description">Join us for our annual Spring Carnival featuring games, food trucks, and family fun activities. Volunteers needed!</div>
+                        <div class="event-meta">
+                            <span class="event-time">🕐 10:00 AM - 3:00 PM</span>
+                            <span class="event-location">📍 School Playground</span>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" onclick="openEventLink('https://givebacks.com/event2')">
+                        <div class="event-date">MAR 22</div>
+                        <div class="event-title">PTSA General Meeting</div>
+                        <div class="event-description">Monthly meeting to discuss upcoming events, budget updates, and new initiatives. All parents welcome!</div>
+                        <div class="event-meta">
+                            <span class="event-time">🕐 7:00 PM - 8:30 PM</span>
+                            <span class="event-location">📍 Media Center</span>
+                        </div>
+                    </div>
+                    
+                    <div class="event-card" onclick="openEventLink('https://givebacks.com/event3')">
+                        <div class="event-date">APR 5</div>
+                        <div class="event-title">Book Fair Week</div>
+                        <div class="event-description">Scholastic Book Fair returns! Browse books for all ages and support our literacy programs.</div>
+                        <div class="event-meta">
+                            <span class="event-time">🕐 8:00 AM - 4:00 PM</span>
+                            <span class="event-location">📍 Library</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Quick Links -->
+                <section class="quick-links">
+                    <h3 class="section-title">Quick Access</h3>
+                    <a href="https://your-givebacks-calendar.com" class="quick-link" target="_blank" rel="noopener">
+                        📅 Event Calendar
+                    </a>
+                    <a href="https://your-signupgenius.com" class="quick-link" target="_blank" rel="noopener">
+                        🙋‍♀️ Volunteer Sign-Up
+                    </a>
+                    <a href="pages/room-parents.html" class="quick-link">
+                        📧 Room Parent Resources
+                    </a>
+                    <a href="pages/store.html" class="quick-link">
+                        🛒 PTSA Store
+                    </a>
+                    <a href="pages/budget.html" class="quick-link">
+                        💰 Budget Information
+                    </a>
+                </section>
+
+                <!-- News/Announcements -->
+                <section class="news-section">
+                    <h3 class="section-title">Latest News</h3>
+                    <div class="news-item">
+                        <div class="news-content">
+                            <strong>Membership Drive Success!</strong><br>
+                            <small class="news-date">March 10, 2025</small>
+                            <p>We've reached 85% of our membership goal. Thank you to all families who have joined!</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <div class="news-content">
+                            <strong>New Volunteer Portal</strong><br>
+                            <small class="news-date">March 5, 2025</small>
+                            <p>SignUpGenius integration is now live for easier volunteer coordination.</p>
+                        </div>
+                    </div>
+                    <div class="news-signup">
+                        <a href="#newsletter" class="newsletter-btn">📧 Get News Updates</a>
+                    </div>
+                </section>
+
+                <!-- Join PTSA Section -->
+                <section class="join-section" id="join">
+                    <h3 class="section-title">Join Our PTSA</h3>
+                    <p>Become part of our school community and help make a difference in your child's education.</p>
+                    <div class="join-benefits">
+                        <div class="benefit-item">✓ Support school programs</div>
+                        <div class="benefit-item">✓ Connect with other families</div>
+                        <div class="benefit-item">✓ Voice in school decisions</div>
+                        <div class="benefit-item">✓ Fun community events</div>
+                    </div>
+                    <a href="https://your-membership-link.com" class="join-now-btn" target="_blank" rel="noopener">
+                        Join Now - $15/Family
+                    </a>
+                </section>
+            </aside>
+        </div>
+
+        <!-- Gold & Silver Sponsors -->
+        <section class="sponsor-tiers">
+            <div class="sponsor-tier">
+                <h3 class="tier-title gold-title">Gold Partners</h3>
+                <div class="sponsor-grid gold-grid">
+                    <!-- Gold sponsors will be loaded dynamically -->
+                    <div class="gold-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Gold Sponsor 1">
+                        <img src="assets/sponsors/gold/gold-1.png" alt="Gold Sponsor 1" loading="lazy">
+                    </div>
+                    <div class="gold-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Gold Sponsor 2">
+                        <img src="assets/sponsors/gold/gold-2.png" alt="Gold Sponsor 2" loading="lazy">
+                    </div>
+                    <div class="gold-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Gold Sponsor 3">
+                        <img src="assets/sponsors/gold/gold-3.png" alt="Gold Sponsor 3" loading="lazy">
+                    </div>
+                    <div class="gold-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Gold Sponsor 4">
+                        <img src="assets/sponsors/gold/gold-4.png" alt="Gold Sponsor 4" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <div class="sponsor-tier">
+                <h3 class="tier-title silver-title">Silver Partners</h3>
+                <div class="sponsor-grid silver-grid">
+                    <!-- Silver sponsors will be loaded dynamically -->
+                    <div class="silver-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Silver Sponsor 1">
+                        <img src="assets/sponsors/silver/silver-1.png" alt="Silver Sponsor 1" loading="lazy">
+                    </div>
+                    <div class="silver-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Silver Sponsor 2">
+                        <img src="assets/sponsors/silver/silver-2.png" alt="Silver Sponsor 2" loading="lazy">
+                    </div>
+                    <div class="silver-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Silver Sponsor 3">
+                        <img src="assets/sponsors/silver/silver-3.png" alt="Silver Sponsor 3" loading="lazy">
+                    </div>
+                    <div class="silver-sponsor" onclick="openSponsorLink('https://example.com')" data-sponsor="Silver Sponsor 4">
+                        <img src="assets/sponsors/silver/silver-4.png" alt="Silver Sponsor 4" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+            <div class="cta-content">
+                <h2>Get Involved Today</h2>
+                <p>Your involvement makes a difference in our children's education and school community.</p>
+                <div class="cta-buttons">
+                    <a href="#join" class="cta-btn primary">Join PTSA</a>
+                    <a href="pages/volunteer.html" class="cta-btn secondary">Volunteer</a>
+                    <a href="pages/donate.html" class="cta-btn secondary">Donate</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>📧 info@bmvptsa.org</p>
+                <p>📍 2230 Lincoln St, Hollywood, FL 33020</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="pages/about.html">About PTSA</a>
+                <a href="pages/calendar.html">Events</a>
+                <a href="pages/volunteer.html">Volunteer</a>
+                <a href="pages/contact.html">Contact</a>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://facebook.com/bmvptsa" target="_blank" rel="noopener">Facebook</a>
+                    <a href="https://instagram.com/bmvptsa" target="_blank" rel="noopener">Instagram</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Beachside Montessori Village PTSA. All rights reserved.</p>
+            <p class="disclaimer">This website is volunteer-created and not an official site of Beachside Montessori Village.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/navigation.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- Initialize page -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Set active navigation
+            if (window.BMVNavigation) {
+                window.BMVNavigation.setActive('/index.html');
+            }
+            
+            // Load dynamic content
+            loadEventData();
+            loadSponsorData();
+        });
+
+        // Function to open sponsor links
+        function openSponsorLink(url) {
+            window.open(url, '_blank', 'noopener');
+        }
+
+        // Function to open event links
+        function openEventLink(url) {
+            window.open(url, '_blank', 'noopener');
+        }
+
+        // Function to load event data (will integrate with Canva/Givebacks)
+        function loadEventData() {
+            // This will be replaced with actual API calls to Givebacks
+            console.log('Event data loaded');
+        }
+
+        // Function to load sponsor data
+        function loadSponsorData() {
+            // This will be replaced with actual sponsor management system
+            console.log('Sponsor data loaded');
+        }
+    </script>
+</body>
+</html>
