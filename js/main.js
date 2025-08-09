@@ -254,7 +254,7 @@ class EventManager {
         
         let html = '';
         this.events.slice(0, 3).forEach(event => { // Show only first 3 on homepage
-            const eventDate = new Date(event.date);
+            const eventDate = new Date(event.date + 'T12:00:00');
             const monthDay = eventDate.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }).toUpperCase();
             
             html += `
